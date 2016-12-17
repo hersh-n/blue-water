@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "normalize";
+@import "creative";
+
+// .hero {
+//   padding-bottom: 0;
+// }
+
+.hero-img {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin: auto;
+  height: 30em;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+
+.logo {
+  height: 100%;
+
+}
+
+@media (min-width: 767px) {
+
+  .navbar-fixed-top {
+      min-height: 80px;
+  }
+
+  .navbar-nav > li > a {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      line-height: 80px;
+  }
+
+  .navbar-brand {
+    height: 80px;
+  }
+
+  .navbar-default {
+      background: white;
+  }
+}

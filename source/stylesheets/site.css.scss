@@ -17,10 +17,16 @@
   }
 }
 
+.navbar-brand {
 
-.logo {
-  height: 100%;
-
+  .logo {
+    height: 100%;
+    display: none;
+  }
+  .icon {
+    height: 100%;
+    padding: 0.3em;
+  }
 }
 
 @media (min-width: 767px) {
@@ -37,7 +43,15 @@
 
   .navbar-brand {
     height: 80px;
+    .logo {
+      display: block;
+    }
+    .icon {
+      display: none;
+    }
   }
+
+
 
   .navbar-default {
       background: white;

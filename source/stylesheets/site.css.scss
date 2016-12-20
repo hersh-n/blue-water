@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "normalize";
 @import "creative";
+@import "photoswipe-main";
 
 // .hero {
 //   padding-bottom: 0;
@@ -70,6 +71,25 @@
 }
 .map-img {
   max-width: 100%;
+}
+
+
+.my-gallery {
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  figure {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 150px;
+  }
+
+  figcaption {
+    display: none;
+  }
 }
 
 

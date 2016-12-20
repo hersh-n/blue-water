@@ -8,7 +8,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman" %></title>
 
+    <link rel="stylesheet" href="stylesheets/default-skin/default-skin.css">
+
+
         <!-- Bootstrap Core CSS -->
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom Fonts -->
@@ -22,7 +26,8 @@
 
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
+
+
   </head>
 
   <body class="<%= page_classes %>" id="page-top">
@@ -82,6 +87,8 @@
       </div>
     </section>
 
+
+
         <!-- jQuery -->
     <script src="https://use.fontawesome.com/7160fa0f4f.js"></script>
 
@@ -99,7 +106,14 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+
+
     <!-- Theme JavaScript -->
     <script src="javascripts/creative.js"></script>
+        <script src="javascripts/photoswipe.min.js"></script>
+    <script src="javascripts/photoswipe-ui-default.min.js"></script>
+    <%= javascript_include_tag :all %>
+
+
   </body>
 </html>

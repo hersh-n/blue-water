@@ -11,7 +11,7 @@
   margin-top: 5em;
   margin-bottom: 5em;
   margin: auto;
-  height: 90%;
+  height: 100%;
   overflow: hidden;
   img {
     width: 100%;
@@ -62,6 +62,12 @@
 
 .hero {
   padding-bottom: 3em;
+
+  .wave {
+    position: absolute;
+    top: 25%;
+    left: 10px;
+  }
 
 }
 

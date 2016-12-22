@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url(../fonts/Nexa-Light.otf) format("truetype");
+}
+
+
 // Mixins
 
 @mixin transition-all() {
@@ -54,10 +61,12 @@
 	}
 }
 
+
 @mixin sans-serif-font() {
-	font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Nexa Light', 'Helvetica Neue', Arial, sans-serif;
 }
 
 @mixin serif-font() {
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+

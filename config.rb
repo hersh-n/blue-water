@@ -41,11 +41,11 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
-  activate :asset_host, :host => '//d1t7xt7lxb78wy.cloudfront.net'
+  activate :asset_host, :host => '//d2v2ln0ckxfpxt.cloudfront.net'
 end
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'bluewaterbeachvillas.com' # The name of the S3 bucket you are targeting. This is globally unique.
+  s3_sync.bucket                     = 'bluewaterbeach.bz' # The name of the S3 bucket you are targeting. This is globally unique.
   s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
   s3_sync.aws_access_key_id          = 'AWS_ACCESS_KEY_ID'
   s3_sync.aws_secret_access_key      = 'AWS_SECRET_ACCESS_KEY'
@@ -61,3 +61,17 @@ activate :s3_sync do |s3_sync|
   s3_sync.index_document             = 'index.html'
   s3_sync.error_document             = '404.html'
 end
+
+
+# activate :cdn do |cdn|
+#   cdn.cloudfront = {
+#     access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+#     secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+#     distribution_id: 'E3ANEJWGC3LBYH'
+#   }
+# end
+
+
+# after_s3_sync do |files_by_status|
+#   cdn_invalidate(files_by_status[:updated])
+# end

@@ -1,11 +1,15 @@
 @charset "utf-8";
 @import "normalize";
 @import "creative";
+@import "owner-guide";
+@import "the-property";
 @import "photoswipe-main";
 
 // .hero {
 //   padding-bottom: 0;
 // }
+
+
 
 .hero-img {
   margin-top: 5em;
@@ -28,6 +32,24 @@
     height: 100%;
     padding: 0.3em;
   }
+
+  .logo-1 {
+    height: 100%;
+    display: none;
+  }
+  .logo-2 {
+    height: 100%;
+    display: none;
+  }
+  .icon {
+    height: 100%;
+    display: block;
+  }
+
+}
+
+.sub-head {
+  min-height: 50%;
 }
 
 @media (min-width: 768px) {
@@ -48,15 +70,20 @@
 
   .navbar-brand {
     height: 80px;
-    .logo {
+    .logo-1 {
+      height: 100%;
       display: block;
+    }
+    .logo-2 {
+      height: 100%;
+      display: none;
     }
     .icon {
       display: none;
     }
   }
   .navbar-default {
-      background: white;
+    border-bottom: none;
   }
 }
 
@@ -95,6 +122,12 @@
 
   figcaption {
     display: none;
+  }
+}
+
+.owners-guide {
+  p {
+    line-height: 4em;
   }
 }
 
